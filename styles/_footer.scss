@@ -1,0 +1,42 @@
+.column {
+    width: 261px;
+    margin-bottom: 52px;
+}
+
+.footer-headding {
+    @include txt-footer(16px, 500, 19px);
+    width: 210px;
+    margin-top: 48px;
+    margin-bottom: 33px;
+}
+
+.footer-email {
+    margin-bottom: 25px;
+}
+
+.contact-txt {
+    @include txt-footer(14px, 500, 16px);
+    width: 261px;
+    margin-left: 10px;
+}
+
+.footer-phone {
+    margin-bottom: 25px;
+}
+
+.footer-dsc {
+    @include txt-footer(14px, 100, 16px);
+    width: 261px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+.contact-txt-third {
+    @include txt-footer(14px, 500, 16px);
+    width: 261px;
+    padding-bottom: 24px;
+}
+
+.footer-pic {
+    padding-right: 24px;
+}

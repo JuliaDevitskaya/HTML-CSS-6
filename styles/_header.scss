@@ -1,0 +1,95 @@
+body {
+    background-color: $bcb; 
+}
+
+.header, footer {
+    background-color: $bc;
+}
+
+.container {
+    margin: 0 auto;
+    width: $site-width;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.header-link {
+    @include txt (16px, 600, 22px);
+    padding: 40px;
+    text-decoration: none;
+}
+
+.header-link:hover {
+    @extend .button;
+}
+
+.main {
+    margin-top: 160px;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.next {
+    @include txt (18px, 600, 29px);
+    text-transform: uppercase;
+    color: $bcbutton;
+    width: 265px;
+}
+
+.main-headding {
+    @include txt (55px, 800, 71px);
+    margin-top: 10px;
+    width: 604px;
+}
+
+.main-dsc {
+    @include txt (18px, 600, 29px);
+    margin-top: 40px;
+    opacity: 0.7;
+    width: 558px;
+    margin-bottom: 50px;
+}
+
+.button-flex {
+    display: flex;
+}
+
+.get {
+    @extend .button;
+    margin-right: 20px;
+}
+
+.button-txt {
+    @include txt(20px, 600, 27px);
+    padding: 15px 30px;
+}
+
+.watch {
+    @extend .button;
+}
+
+.button-txt-flex {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+}
+
+.watch-txt {
+    @include txt (20px, 600, 27px);
+    margin-left: 10px;
+}
+
+.get:hover, .watch:hover, .learn:hover {
+    outline: 4px solid #fff;
+}
+
+.logo {
+    margin-top: 200px;
+    margin-bottom: 100px;
+}

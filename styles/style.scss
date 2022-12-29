@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+@mixin txt ($fs, $fw, $lh) {
+    color:$color;
+    font-family: 'Open Sans', sans-serif;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+}
+
+@mixin item ($w) {
+    padding: 30px;
+    text-align: center;
+    background: $bcitem;
+    border-radius: $br*2;
+    box-sizing: border-box;
+    width: $w;
+}
+
+@mixin item-txt ($fs, $fw, $lh, $op, $w) {
+    color:$color;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    opacity: $op;
+    width: $w;
+}
+
+@mixin txt-footer ($fs, $fw, $lh) {
+    color:$color;
+    font-family: 'Roboto', sans-serif;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+}
+
+@import "vars";
+
+.button {
+    background-color: $bcbutton;
+    border-radius: $br;
+}
+
+@import "header";
+
+.banner {
+    margin-top: 157px;
+    margin-bottom: 264px;
+}
+
+.apply-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.apply-headding {
+    @include txt (40px,700, 52px);
+    width: 484px;
+}
+
+.apply-dsc {
+    @include txt (16px, 600, 26px);
+    margin-top: 30px;
+    opacity: 0.7;
+    margin-bottom: 50px;
+    width: 460px;
+}
+
+.learn-txt {
+    @include txt (16px, 600, 22px);
+    padding: 15px 30px;
+}
+
+.result {
+    margin-bottom: 243px;
+}
+
+.item {
+    @include item(362px);
+    margin-bottom: 30px;
+}
+
+.item-headding {
+    @include item-txt (25px, 700, 31px, 0.7, 302px);
+    margin: 30px 0;
+}
+
+.item-dsc {
+    @include item-txt (16px, 600, 26px, 0.5, 302px);
+}
+
+.item1 {
+    @include item(754px);
+}
+
+.item1-headding {
+    @include item-txt (25px, 700, 31px, 0.7, 694px);
+    margin: 60px 0;
+}
+
+.item1-dsc {
+    @include item-txt (16px,600, 26px, 0.5, 694px);
+    margin-bottom: 114px;
+}
+
+.feedback {
+    margin-bottom: 221px;
+}
+
+.feedback-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.feedback-headding {
+    @include txt (40px, 700, 52px);
+    width: 548px;
+    margin-bottom: 20px;
+}
+
+.feedback-dsc {
+    @include txt (16px, 600, 26px);
+    width: 460px;
+    opacity: 0.7;
+}
+
+@import "footer";
